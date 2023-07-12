@@ -6,11 +6,7 @@ module.exports = {
         fontFamily: {
             sans: ['Inter', 'sans-serif'],
         },
-        extend: {
-            spacing: {
-                'screen-90': '90vw',
-            },
-        },
+
         container: {
             center: true,
             padding: '2rem',
@@ -19,6 +15,9 @@ module.exports = {
             },
         },
         extend: {
+            spacing: {
+                'screen-90': '90vw',
+            },
             colors: {
                 border: 'hsl(var(--border))',
                 input: 'hsl(var(--input))',
@@ -27,6 +26,7 @@ module.exports = {
                 foreground: 'hsl(var(--foreground))',
                 primary: {
                     DEFAULT: 'hsl(var(--primary))',
+                    hover: 'hsl(var(--primary-hover))',
                     foreground: 'hsl(var(--primary-foreground))',
                 },
                 secondary: {
