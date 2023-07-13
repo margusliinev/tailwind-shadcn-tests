@@ -6,7 +6,6 @@ module.exports = {
         fontFamily: {
             sans: ['Inter', 'sans-serif'],
         },
-
         container: {
             center: true,
             padding: '2rem',
@@ -15,8 +14,18 @@ module.exports = {
             },
         },
         extend: {
+            boxShadow: {
+                bottom: '0 1px 0px 0px rgba(0, 0, 0, 0.1);',
+                right: '1px 0 0px 0px rgba(0, 0, 0, 0.1);',
+            },
+            minHeight: {
+                'screen-nav': 'calc(100vh - 5rem)',
+            },
             spacing: {
                 'screen-90': '90vw',
+            },
+            gridTemplateColumns: {
+                layout: 'auto 1fr',
             },
             colors: {
                 border: 'hsl(var(--border))',
